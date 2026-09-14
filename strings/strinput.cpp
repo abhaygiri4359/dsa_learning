@@ -6,5 +6,6 @@ int main()
     cin.getline(str,100);
     cout<<str;
     
+    
 
 }
