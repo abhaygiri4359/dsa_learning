@@ -12,6 +12,11 @@ int main()
     {
         if(n==1)
         break;
+        if(n==2 && s[i]!=s[i+1])
+        {count=1;
+            break;
+            
+        }
         if(n==2&& s[0]!=s[1])
         {
             count=1;
@@ -25,7 +30,7 @@ int main()
         }
         else if(i==n-1)
         {
-            if(s[1]!=s[i-1])
+            if(s[i]!=s[i-1])
             count++;
         }
        else  if(s[i]!=s[i+1]&&s[i]!=s[i-1])
